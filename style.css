@@ -1,6 +1,6 @@
 body {
     color: aquamarine;
-    background: url(../home.jpg), rgba(68, 68, 68, 0.1);
+    background: url(home.jpg), rgba(68, 68, 68, 0.9);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
