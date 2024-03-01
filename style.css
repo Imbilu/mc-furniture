@@ -1,0 +1,125 @@
+body {
+    color: aquamarine;
+    background: url(../home.jpg), rgba(68, 68, 68, 0.1);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, main, footer {
+    padding: 20px;
+  }
+
+  section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+  }
+  
+  #about-us {
+    background-color:black;
+    opacity: 0.9;
+    border-radius: 2%;
+    color: white;
+    padding-bottom: 50px;
+  }
+  
+  #services {
+    padding: 50px 0;
+  }
+  
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .service {
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 1%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgba(68, 68, 68, 0.9);
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .service img {
+    height: 100%;
+    width: 400px;
+    margin-right: 20px;
+  }
+  
+  .service p {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .service h2 {
+    color: brown;
+  }
+  
+  footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: grey;
+  }
+  
+  /* Scroll Animations */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+  
+.service:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+@media screen and (max-width: 1000px) {
+  .service img {
+    height: 100%;
+    width: 300px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about-us {
+    border-radius: 5%;
+  }
+
+  .service {
+    width: 100%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .service p{
+    padding: 5px;
+  }
+
+  .service img {
+    height: fit-content;
+    width: 100%;
+  }
+}
+
